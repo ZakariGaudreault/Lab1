@@ -124,10 +124,10 @@ namespace ConsoleApp1
 
             }
             Console.WriteLine("Footer");
-            #region Exercise 7
+            #region Exercise F
 
             /** G. PrintReport
-        *  # Operations = i*1 j*1
+        *  # Operations = i + j
         *  Growth = O(n)
         *  Best: NA
         *  Worst: Na
@@ -145,8 +145,39 @@ namespace ConsoleApp1
                     Console.WriteLine(IDs[j]); 
                 }
             }
+            #region Exercise 2
+
+            /** A PrintCoordinatesV1 
+        *  # Operations = i
+        *  Growth = O(i)
+        *  Best: NA
+        *  Worst: Na
+        */
+          
+            static void PrintCoordinatesV1(int size)
+            {
+              for (int i = 0; i<size; i++)
+                {
+                    Console.WriteLine(i);
+                }
+            }
 
 
+            /** A PrintCoordinatesV1 
+        *  # Operations = i
+        *  Growth = O(i)
+        *  Best: NA
+        *  Worst: Na
+        */
+            static void PrintCoordinatesV2(int size)
+            {
+                for (int i = 0; i < size; i++)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            
+            #endregion
         }
     }
 }

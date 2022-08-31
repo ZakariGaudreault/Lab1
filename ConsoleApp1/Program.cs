@@ -8,7 +8,7 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Bread");
         }
-        #region Exercise 1
+        #region Exercise A
         /** Log messagesV1
           
         #
@@ -25,7 +25,7 @@ namespace ConsoleApp1
             Console.WriteLine(messages[0]);
         }
 
-        #region Exercise 2
+        #region Exercise B
         /** Log messagesV1
           
         #
@@ -43,7 +43,7 @@ namespace ConsoleApp1
                 Console.WriteLine(messages[0]);
         }
 
-        #region Exercise 3
+        #region Exercise C
         /** Log messagesV1
           
         #
@@ -62,7 +62,7 @@ namespace ConsoleApp1
                 Console.WriteLine(messages[1]);
         }
 
-        #region Exercise 4
+        #region Exercise D
         /** Log PrintArrayV1
           
         #
@@ -80,7 +80,7 @@ namespace ConsoleApp1
                 Console.WriteLine(names[i]);
             }
         }
-        #region Exercise 5
+        #region Exercise E
         /** Log PrintArrayV1
           
         #
@@ -102,7 +102,7 @@ namespace ConsoleApp1
             }
             Console.WriteLine("Footer");
         }
-        #region Exercise 6
+        #region Exercise F
         /** Log PrintArrayV1
           
         #
@@ -124,6 +124,29 @@ namespace ConsoleApp1
 
             }
             Console.WriteLine("Footer");
+            #region Exercise 7
+
+            /** G. PrintReport
+        *  # Operations = i*1 j*1
+        *  Growth = O(n)
+        *  Best: NA
+        *  Worst: Na
+        */
+            #endregion
+            static void PrintReport(string[] names, int[] IDs)
+            {
+                for (int i = 0; i < names.Length; i++) 
+                {
+                    Console.WriteLine(names[i]); 
+                }
+
+                for (int j = 0; j < IDs.Length; j++) 
+                {
+                    Console.WriteLine(IDs[j]); 
+                }
+            }
+
+
         }
     }
 }

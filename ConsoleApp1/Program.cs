@@ -6,7 +6,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bread");
+         
+         
         }
         #region Exercise A
         /** Log messagesV1
@@ -18,15 +19,15 @@ namespace ConsoleApp1
         Worst = NA
         
         **/
-        #endregion
+       
 
         static void LongMessagesV1(string[] messages)
         {
             Console.WriteLine(messages[0]);
         }
 
-        #region Exercise B
-        /** Log messagesV1
+        
+        /** Log messagesV2
           
         #
         operations = 1+1 = 2
@@ -35,7 +36,7 @@ namespace ConsoleApp1
         Worst = NA
         
         **/
-        #endregion
+       
 
         static void LongMessagesV2(string[] messages)
         {
@@ -43,8 +44,8 @@ namespace ConsoleApp1
                 Console.WriteLine(messages[0]);
         }
 
-        #region Exercise C
-        /** Log messagesV1
+       
+        /** Log messagesV3
           
         #
         operations = 1+1+1 = 3
@@ -53,7 +54,7 @@ namespace ConsoleApp1
         Worst = NA
         
         **/
-        #endregion
+       
 
         static void LongMessagesV3(string[] messages)
         {
@@ -62,7 +63,7 @@ namespace ConsoleApp1
                 Console.WriteLine(messages[1]);
         }
 
-        #region Exercise D
+       
         /** Log PrintArrayV1
           
         #
@@ -72,7 +73,7 @@ namespace ConsoleApp1
         Worst = NA
         
         **/
-        #endregion
+       
         static void PrintArrayV1(string[] names)
         {
            for (int i = 0; i < names.Length; i++)
@@ -80,17 +81,16 @@ namespace ConsoleApp1
                 Console.WriteLine(names[i]);
             }
         }
-        #region Exercise E
-        /** Log PrintArrayV1
-          
-        #
-        operations = i+1+1
-        Growth = 0(i)
-        Best = NA
-        Worst = NA
-        
-        **/
-        #endregion
+        /** Log PrintArrayV2
+         
+       #
+       operations = i+1+1
+       Growth = 0(i)
+       Best = NA
+       Worst = NA
+       
+       **/
+
         static void PrintArrayV2(string[] names)
         {
 
@@ -102,17 +102,16 @@ namespace ConsoleApp1
             }
             Console.WriteLine("Footer");
         }
-        #region Exercise F
-        /** Log PrintArrayV1
-          
-        #
-        operations = i^2+1+1
-        Growth = 0(i)
-        Best = NA
-        Worst = NA
+        /** Log PrintArrayV3
         
-        **/
-        #endregion
+      #
+      operations = i^2+1+1
+      Growth = 0(i)
+      Best = NA
+      Worst = NA
+      
+      **/
+
         static void PrintArrayV3(string[] names)
         {
             Console.WriteLine("Header");
@@ -124,15 +123,15 @@ namespace ConsoleApp1
 
             }
             Console.WriteLine("Footer");
-            #region Exercise F
-
-            /** G. PrintReport
-        *  # Operations = i + j
-        *  Growth = O(n)
-        *  Best: NA
-        *  Worst: Na
-        */
-            #endregion
+            /** Log PrintArrayV3
+         
+       #
+       operations = i+j
+       Growth = 0(i)
+       Best = NA
+       Worst = NA
+       
+       **/
             static void PrintReport(string[] names, int[] IDs)
             {
                 for (int i = 0; i < names.Length; i++) 
@@ -145,6 +144,8 @@ namespace ConsoleApp1
                     Console.WriteLine(IDs[j]); 
                 }
             }
+
+            #endregion
             #region Exercise 2
 
             /** A PrintCoordinatesV1 
@@ -153,7 +154,7 @@ namespace ConsoleApp1
         *  Best: NA
         *  Worst: Na
         */
-          
+
             static void PrintCoordinatesV1(int size)
             {
               for (int i = 0; i<size; i++)
@@ -163,8 +164,8 @@ namespace ConsoleApp1
             }
 
 
-            /** A PrintCoordinatesV1 
-        *  # Operations = i
+            /** ABPrintCoordinatesV2
+        *  # Operations = i+1
         *  Growth = O(i)
         *  Best: NA
         *  Worst: Na
@@ -173,10 +174,69 @@ namespace ConsoleApp1
             {
                 for (int i = 0; i < size; i++)
                 {
-                    Console.WriteLine(i);
+                  
+
+                    for (int n = 0; n < size; n++)
+                    {
+                        Console.WriteLine(i+""+n);
+                    }
+                    Console.Write("");
                 }
             }
-            
+
+
+            /** ABPrintCoordinatesV3
+        *  # Operations = i^2+1
+        *  Growth = O(i)
+        *  Best: NA
+        *  Worst: Na
+        */
+            static void PrintCoordinatesV3(int size)
+            {
+                {
+                    for (int i = 0; i < size; i++)
+                    {
+                        Console.WriteLine(i);
+                    }
+                }
+
+
+
+                for (int i = 0; i < size; i++)
+                {
+                   
+
+                    for (int n = 0; n < size; n++)
+                    {
+                        Console.WriteLine(i + "," + n);
+                    }
+                    Console.Write("");
+                }
+            }
+            /** ABPrintCoordinatesV4
+      *  # Operations = i^3+1
+      *  Growth = O(i)
+      *  Best: NA
+      *  Worst: Na
+      */
+               static void PrintCoordinatesV4(int size)
+            {
+
+                for (int i = 0; i < size; i++)
+                {
+
+                    for (int n = 0; n < size; n++)
+                    {
+
+                        for (int j = 0; j < size; j++)
+                        {
+                            Console.WriteLine(i + "," + n + ","+j);
+                        }
+                    }
+                    Console.Write("");
+                }
+            }
+         
             #endregion
         }
     }
